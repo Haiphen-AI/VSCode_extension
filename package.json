@@ -1,7 +1,7 @@
 {
   "name": "haiphen-ai",
   "displayName": "Haiphen AI",
-  "description": "Haiphen AI uses machine-learning to provide package threat vulnerability detection. It can also be used to identify unaffected packages with similar properties to a vulnerable one,e.",
+  "description": "Haiphen AI uses machine-learning to provide package threat vulnerability detection. It can also be used to identify unaffected packages with similar properties to a vulnerable one.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
@@ -15,6 +15,9 @@
     "onCommand:haiphen-ai.searchPackageByName"
   ],
   "main": "./dist/extension.js",
+  "repository": {
+    "url": "https://github.com/Haiphen-AI/VSCode_extension.git"
+  },
   "contributes": {
     "commands": [
       {

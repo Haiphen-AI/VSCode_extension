@@ -66,18 +66,18 @@ async function assessResponse(d: HaiphenPackageAnalysis) {
   const howMany = vulnerabilities.length;
   showErrorMessage(`${name} has ${howMany} vulnerabilities`);
   const opts = vulnerabilities.map((label) => ({ label }));
-  await selectVulnerability(opts);
+  await selectVulnerability(name, opts);
 }
 
 /**
  * Select from a list of `vulnerabilities`. Allow user to select
  * multiple until they exit without a selection
  */
-async function selectVulnerability(opts: { label: string }[]) {
-  const title = "Select Vulnerability";
+async function selectVulnerability(name: string, opts: { label: string }[]) {
+  const title = `View a ${name} vulnerability:`;
   const vulnerability = await showQuickPick(opts, { title });
   if (vulnerability) {
     await fetchVulnerability(vulnerability.label);
-    selectVulnerability(opts);
+    selectVulnerability(name, opts);
   }
 }
