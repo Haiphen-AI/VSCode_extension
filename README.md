@@ -7,7 +7,7 @@ This extension allows you to check a package for vulnerabilities. It also allows
 You can either select a dependency from your project's `package.json` file, or search for one by name.
 
 #### Commands
-<img alt="Haiphen-AI vscode commands" width="1000" src="./readme-imgs/ha-commands.png" />
+![Haiphen-AI vscode commands](./images/ha-commands.png)
 
 #### Search for package by name
 ![Haiphen-AI search dependency](./images/ha-search-dep.png)
@@ -15,7 +15,7 @@ You can either select a dependency from your project's `package.json` file, or s
 Haiphen-AI returns a list of known vulnerabilities associated with that package. You can select a vulnerability to view its description. 
 #### Vulnerabilities list
 ![Haiphen-AI select vulnerability](./images/ha-select-vul.png)
-<img alt="NVD CVE detail" width="800" src="./images/ha-vul-detail.png" />
+<img alt="NVD CVE detail" width="400" src="./images/ha-vul-detail.png" />
 
 ## Known Issues
 
